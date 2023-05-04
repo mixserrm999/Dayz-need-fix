@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="centered">
+    <form id='player-form' action="#">
+      <input id='player-input' type='text' placeholder="NoName"></input>
+      <button type="submit">Entrar</button>
+    </form>
+    <canvas id='ctx' width="800" height="600" style='border:1px solid #000000;display:none;'></canvas>
+    <div id="howto">
+      Como jogar:<br>
+      <b>A W S D</b> para movimentar seu personagem.<br>
+      <b>J</b> para atirar.
+    </div>
+    <!-- <div id='chat-text' style='border:1px solid #000000;width:500px;height:100px;overflow-y:scroll'></div>
+  <form id='chat-form'>
+    <input id='chat-input' type='text' style='width:500px'></input>
+  </form> -->
+  </div>
+  <script src="/socket.io.min.js"></script>
+  <script src="/client.js"></script>
+</body>
+
+</html>
